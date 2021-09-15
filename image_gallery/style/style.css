@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+.gallery-img{
+    display:none;
+    max-height: 600px;
+    border: 50px solid transparent;
+    border-image:url(/image/border.jpg) 75 stretch;
+}
+.active{
+    display: block;
+}
+.image-gallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.btns{
+    margin-top:20px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    background-color: #0074d9;
+    color:white;
+    padding:5px 10px;
+    font-size: 20px;
+    border-color: transparent;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.prev{
+    margin-right: 31px;
+}
+.btn:disabled{
+    background-color: #777;
+    cursor: not-allowed;
+}
