@@ -12,6 +12,9 @@ prevBtn.addEventListener('click',function(){
         prevBtn.disabled = true;
         nextBtn.disabled = false;
     }
+    else{
+        nextBtn.disabled = false;
+    }
 });
 
 nextBtn.addEventListener('click',function(){
@@ -22,5 +25,8 @@ nextBtn.addEventListener('click',function(){
     if(galleryImgs.length === currentlySelected+1)
     {
         nextBtn.disabled = true;
+    }
+    else{
+        nextBtn.disabled = false;
     }
 });
